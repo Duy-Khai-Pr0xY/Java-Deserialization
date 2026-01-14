@@ -8,3 +8,5 @@
 #### Serial Version UID: mỗi class trong java sẽ có version uid khác nhau. Khi mà deserialize java sẽ kiểm tra version trong serialize_data và version của class đang có trên server để đảm bảo sự tương thích
 # Magic methods trong Java
 #### ClassName() (Khởi tạo), finalize() (Hủy obj), toString() (ép kiểu)
+# Đặc biệt: tùy chỉnh được quá trình serialize và unserialize 
+#### làm sao để tùy chỉnh ??? => dev sẽ viết lại 2 method writeObject và readObject của chính 
