@@ -10,3 +10,4 @@
 #### ClassName() (Khởi tạo), finalize() (Hủy obj), toString() (ép kiểu)
 # Đặc biệt: tùy chỉnh được quá trình serialize và unserialize 
 #### làm sao để tùy chỉnh ??? => dev sẽ viết lại 2 method writeObject và readObject của chính 
+# Root cause của lỗi Deserialize là untrusted_data quá trình unserialize (readObject)
