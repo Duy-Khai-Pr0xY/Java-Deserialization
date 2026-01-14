@@ -9,5 +9,7 @@
 # Magic methods trong Java
 #### ClassName() (Khởi tạo), finalize() (Hủy obj), toString() (ép kiểu)
 # Đặc biệt: tùy chỉnh được quá trình serialize và unserialize 
-#### làm sao để tùy chỉnh ??? => dev sẽ viết lại 2 method writeObject và readObject của chính 
+#### Làm sao để tùy chỉnh ??? => dev sẽ viết lại 2 method writeObject và readObject của chính 
 # Root cause của lỗi Deserialize là untrusted_data quá trình unserialize (readObject)
+#### Thay vì ngồi tự chỉnh nhờ java serialize cái payload 
+#### Java muốn thay đổi dữ liệu thì cần phải build lại docker exec -it java_deserialize /home/cbjs/build.sh
