@@ -7,7 +7,7 @@
 #### Classname: com.example.javaserialize.User..... và tên thuộc tinh và kiểu dữ liệu của thuộc tính đó và giá trị của thuộc tính 
 #### Serial Version UID: mỗi class trong java sẽ có version uid khác nhau. Khi mà deserialize java sẽ kiểm tra version trong serialize_data và version của class đang có trên server để đảm bảo sự tương thích.Nó tính toán dựa trên cấu trúc của class chứ không phải là trên giá trị của thuộc tính trong class
 # Magic methods trong Java
-#### ClassName() (Khởi tạo), finalize() (Hủy obj), toString() (ép kiểu)
+#### ClassName() (Khởi tạo), finalize() (Hủy obj), toString() (ép kiểu), Runtimeexc,ProcessBuilder (như kiểu câu lệnh system)
 # Đặc biệt: tùy chỉnh được quá trình serialize và unserialize 
 #### Làm sao để tùy chỉnh ??? => dev sẽ viết lại 2 method writeObject và readObject của chính 
 # Root cause của lỗi Deserialize là untrusted_data quá trình unserialize (readObject)
