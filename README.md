@@ -13,4 +13,4 @@
 # Root cause của lỗi Deserialize là untrusted_data quá trình unserialize (readObject)
 #### Thay vì ngồi tự chỉnh nhờ java serialize cái payload 
 #### Java muốn thay đổi dữ liệu thì cần phải build lại "docker exec -it java_deserialize /home/cbjs/build.sh" (đây là câu lệnh biuld lại chương trình bên trên )
-# Dowload file ysoserial-all.jar để dùng tools
+# Dowload file ysoserial-all.jar để dùng tools (Releases)
